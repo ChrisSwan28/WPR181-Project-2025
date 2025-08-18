@@ -38,6 +38,8 @@
     justify-content: center;
     margin: 80px;
     padding: 50px;
+    line-height: 1.6;
+    
 }
 #image-element{
     display: block;
@@ -62,6 +64,9 @@
     list-style: none;
     margin-left: 1rem;
     padding: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    
 }
 /*Standard Tag Elements*/
 a{
@@ -102,4 +107,5 @@ ul{
     margin: 5px;
     gap: 1rem;
     padding: 5px;
+
 }
