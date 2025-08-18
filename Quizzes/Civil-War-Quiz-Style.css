@@ -23,10 +23,18 @@
     outline-offset: 3px;
 }
 
-/* Even class for styling alternate items */
-.even {
-    background: linear-gradient(30deg, #09a8e7 60%, #2989c0 100%);
+/* Alternating fieldset backgrounds */
+.odd {
+    background: linear-gradient(45deg, #09a8e7 60%, #2989c0 100%);
     border-radius: 20px;
+    padding: 1rem;
+    color: #161D6F;
+}
+
+.even {
+    background: linear-gradient(45deg, #58e7c8 60%, #3bf0d2 100%);
+    border-radius: 20px;
+    padding: 1rem;
     color: #161D6F;
 }
 
@@ -35,13 +43,24 @@ body {
     background: linear-gradient(45deg, #161D6F 50%, #0B2F9F 100%);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 3fr 100px;
+    grid-template-rows: 100px auto 100px;
     height: 100vh;
     margin: 0;
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
     line-height: 1.6;
+    font-family: "Outfit", Arial, sans-serif;
+}
+
+/* Form */
+form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 90%;
 }
 
 /* Buttons */
@@ -51,9 +70,11 @@ button {
     border-radius: 20px;
     color: #161D6F;
     font-family: "Quicksand", Arial, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 650;
+    padding: 0.5rem 1rem;
     cursor: pointer;
+    justify-self: center;
 }
 
 button:focus {
@@ -61,18 +82,19 @@ button:focus {
     outline-offset: 3px;
 }
 
-/* Forms */
-form {
-    color: whitesmoke;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    font-family: "Outfit", Arial, sans-serif;
-    font-size: 15px;
-    margin: 1rem;
+/* Footer */
+footer {
+    background-color: whitesmoke;
+    color: #161D6F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 500;
+    padding: 1rem;
 }
 
+/* Fieldset and Legend Styling */
 fieldset {
     border: none;
     font-weight: 550;
@@ -82,28 +104,4 @@ legend {
     color: whitesmoke;
     font-style: italic;
     font-weight: 600;
-}
-
-/* Header container */
-header {
-    align-items: center;
-    background: linear-gradient(30deg, whitesmoke 50%, aliceblue 100%);
-    display: grid;
-    grid-template-columns: 15fr 1fr;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-/* Footer */
-footer {
-    align-items: center;
-    background-color: whitesmoke;
-    color: #161D6F;
-    display: flex;
-    justify-content: center;
-    font-family: "Quicksand", Arial, sans-serif;
-    font-weight: 500;
-    padding: 1rem;
 }
