@@ -3,53 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia-Vietnam War</title>
+    <title>Historia - Vietnam War</title>
     <link rel="stylesheet" href="Vietnam-War-Style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+
+    <!-- Skip link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
         <h1>Vietnam War</h1>
-        <div id="home-button"><a href="../index.html">Home</a></div> 
+        <nav role="navigation" aria-label="Main Navigation">
+            <div id="home-button"><a href="../index.html">Home</a></div>
+        </nav>
     </header>
-  
-    <article>
-    <section id="origin">
-    <h2> The Origin of the Vietnam War</h2>
-    <ul>
-      <li>The war started in November 1st 1955 and ended on April 30th 1975</li>
-      <li>Vietnam wanted indpendance after French Colonialism. After World War 2 Vietnam was divided into Communist North Vs Anti-Communist South</li>
-      <li>The US supported the South while the USSR and China supported the North, thus the fear of the Domino Theory</li>
-    </ul>
-    </section>
 
-    <h3 id="logo-body">Historia</h3>
+    <main id="main-content" role="main">
+        <article aria-labelledby="page-title">
+            <h2 id="page-title" class="visually-hidden">Vietnam War Overview</h2>
 
-    <section id="key-events">
-    <h2>The Key Events that took place during the war</h2>
-    <ol>
-      <li>Geneva Accords divided Vietnam at the 17th parallel which was a temporary demarcation line between North and South (1954)</li>
-      <li>The Gulf of Tonkin incident (1964)The US sent combat troops</li>
-      <Li>The Tet Offensive, this was the large North Vietnamese attack (1968)</Li>
-      <li>The My Lai Massacre, this was the mass murder of innocent civillians in South Vietnam (1968)</li>
-      <li>The US began Vietnamisation in 1969 to 1973,this was when the US wass withdrawing</li>
-      <li>The signing of the ParisPeace Accords which was the agreement of ending the war and restoring peace in Vietnam (1973)</li>
-      <li>The fall of the Siagon which was when North Vietnam won the War (1975)</li>
-      
-    </ol>
-    </section>
+            <section id="origin" aria-labelledby="origin-title">
+                <h2 id="origin-title">The Origin of the Vietnam War</h2>
+                <ul>
+                    <li>The war started on November 1st, 1955 and ended on April 30th, 1975</li>
+                    <li>Vietnam wanted independence after French colonialism. After WWII, Vietnam was divided into Communist North vs Anti-Communist South</li>
+                    <li>The US supported the South while the USSR and China supported the North, leading to the Domino Theory concerns</li>
+                </ul>
+            </section>
 
-    <section id="aftermath">
-    <h2>The Aftermath Of the Vietnam War</h2>
-    <p>
-      The war killed millions of Vietnamese civilians and soldiers, including approximately 58,000 American service members.
-      The US military was demoralized, and the nation was bitterly split. Vietnam was reunited under communist leadership.
-    </p>
-    </section>
-    </article>
-    <footer>&copy 2025 Historia. All Rights Reserved.</footer>
+            <h3 id="logo-body">Historia</h3>
+
+            <section id="key-events" aria-labelledby="events-title">
+                <h2 id="events-title">The Key Events that took place during the war</h2>
+                <ol>
+                    <li>Geneva Accords divided Vietnam at the 17th parallel (1954)</li>
+                    <li>The Gulf of Tonkin incident (1964), US sent combat troops</li>
+                    <li>The Tet Offensive, large North Vietnamese attack (1968)</li>
+                    <li>The My Lai Massacre, mass murder of civilians in South Vietnam (1968)</li>
+                    <li>Vietnamization (1969–1973), US began withdrawing troops</li>
+                    <li>Signing of the Paris Peace Accords (1973), ending the war and restoring peace</li>
+                    <li>The fall of Saigon (1975), North Vietnam victory and reunification</li>
+                </ol>
+            </section>
+
+            <section id="aftermath" aria-labelledby="aftermath-title">
+                <h2 id="aftermath-title">The Aftermath of the Vietnam War</h2>
+                <p>
+                    Millions of Vietnamese civilians and soldiers died, including approximately 58,000 American service members.
+                    The US military was demoralized, and the nation was divided. Vietnam was reunified under communist leadership.
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        &copy; 2025 Historia. All Rights Reserved.
+    </footer>
 </body>
-
 </html>
