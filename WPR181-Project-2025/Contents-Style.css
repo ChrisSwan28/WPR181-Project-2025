@@ -6,7 +6,7 @@
     border-bottom: 5px solid #0B2F9F;
     display: grid;
     font-size: 20px;
-    font-family: "Quicksand", arial;
+    font-family: "Quicksand", arial, sans-serif;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-start: 2;
@@ -47,6 +47,7 @@
     height: 90vh;
     order: 1;
     width: 50vw;
+    object-fit: cover;
 }
 /*Developer Created Classes*/
 .course-option{
@@ -56,11 +57,44 @@
     border-radius: 30px;
     margin: 3rem;
     padding: 1.5rem;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: transform 0.2s ease, background-color o.2s ease;
 }
+
+.course-option:hover,
+.course-option:focus{
+    background-color: #153ac7;
+    transform: scale(1.05);
+    outline: 3px solid #FFD700;
+    outline-offset: 3px;
+}
+
 .menu-option{
     padding: 10px;
     border-right: 2px solid whitesmoke;
 }
+
+.menu-option:last-child {
+    border-right: none; 
+}
+
+.menu-option a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.menu-option a:hover,
+.menu-option a:focus {
+    color: #FFD700; 
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+    border-radius: 5px;
+}
+
 /*Basic Tag Elements*/
 a{
     color: whitesmoke;
@@ -75,7 +109,9 @@ body{
     margin: 0;
     padding: 0;
     width: 100vw;
-    overflow: hidden;
+    overflow: auto;
+    font-size: 1rem; 
+    line-height: 1.5;
 }
 header{
     align-items: center;
@@ -100,4 +136,22 @@ footer{
     grid-row-end: 4;
     padding: 1rem;
     justify-content: center;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #FFD700;
+    color: #000;
+    padding: 10px 15px;
+    z-index: 100;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 10px;
 }
