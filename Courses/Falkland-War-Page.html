@@ -3,61 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia - Falkland War</title>
-    <link rel="stylesheet" href="Falkland-War-Style.css"/>
+    <title>Quiz-Falklands War</title>
+    <link rel="stylesheet" href="./Falklands-War-Quiz-Style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Skip link for screen readers & keyboard users -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header role="banner">
-        <h1>Falkland War</h1>
-        <nav role="navigation" aria-label="Main Navigation">
-            <div id="home-button"><a href="../index.html">Home</a></div> 
-        </nav>
+    <header>
+        <div id="header-logo">Historia</div>
+        <div id="header-title"><a href="../index.html">Home</a></div>
     </header>
 
-    <main id="main-content" role="main">
-        <article aria-labelledby="page-title">  
-            <h2 id="page-title" class="visually-hidden">Falkland War Overview</h2>
+    <form>
+        <fieldset class="odd">
+            <legend>Question 1</legend>
+            <p>Which two nations fought the Falklands War?</p>
+            <label><input type="radio" name="q1" required> USA and Argentina</label><br>
+            <label><input type="radio" name="q1"> UK and Argentina</label><br>
+            <label><input type="radio" name="q1"> France and UK</label><br>
+        </fieldset>
 
-            <section id="origin" aria-labelledby="origin-title">
-                <h2 id="origin-title">The Origin of The Falklands War</h2>
-                <ul>
-                    <li>A long standing dispute between Argentina and Britain over the Falkland Islands</li>
-                    <li>Argentina's military political group attempted to assert control</li>
-                    <li>Britain sent a task force to reclaim the islands for themselves</li>
-                </ul>
-            </section>
+        <fieldset class="even">
+            <legend>Question 2</legend>
+            <p>What year did the Falklands War occur?</p>
+            <label><input type="radio" name="q2" required> 1990</label><br>
+            <label><input type="radio" name="q2"> 1982</label><br>
+            <label><input type="radio" name="q2"> 1975</label><br>
+        </fieldset>
 
-            <h3 id="logo-body">Historia</h3>
+        <fieldset class="odd">
+            <legend>Question 3</legend>
+            <p>Which British ship was sunk by Argentina?</p>
+            <label><input type="radio" name="q3" required> ARA General Belgrano</label><br>
+            <label><input type="radio" name="q3"> HMS Sheffield</label><br>
+            <label><input type="radio" name="q3"> ARA San Martin</label><br>
+        </fieldset>
 
-            <section id="key-events" aria-labelledby="events-title">
-                <h2 id="events-title">The Key Events that took place during the War</h2>
-                <ol>
-                    <li>Argentina invaded the islands (April)</li>
-                    <li>British Navy task force sailed to reclaim territory and 2 ships HMS Sheffield and the Atlantic Conveyor sunk (May)</li>
-                    <li>British Navy landed on the east and advanced (May)</li>
-                    <li>Argentina Forces surrendered (June)</li>
-                </ol>
-            </section>
+        <fieldset class="even">
+            <legend>Question 4</legend>
+            <p>Who sent the ships to occupy the Falklands Islands?</p>
+            <label><input type="radio" name="q4" required> Winston Churchill</label><br>
+            <label><input type="radio" name="q4"> Tony Blair</label><br>
+            <label><input type="radio" name="q4"> Margaret Thatcher</label><br>
+        </fieldset>
 
-            <section id="aftermath" aria-labelledby="aftermath-title">
-                <h2 id="aftermath-title">The Aftermath</h2>
-                <p>
-                    The British won the war, which lasted 74 days. It reinforced Prime Minister Margaret Thatcher's 
-                    administration and increased nationalism in the United Kingdom. 
-                    The military in Argentina fell and democracy returned as a result of the defeat.
-                </p>
-            </section>
-        </article>
-    </main>
+        <fieldset class="odd">
+            <legend>Question 5</legend>
+            <p>What was the result of the Falklands War?</p>
+            <label><input type="radio" name="q5" required> British Victory</label><br>
+            <label><input type="radio" name="q5"> Argentina Victory</label><br>
+            <label><input type="radio" name="q5"> Stalemate</label><br>
+        </fieldset>
 
-    <footer role="contentinfo">
-        &copy; 2025 Historia. All Rights Reserved.
-    </footer>
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>&copy; 2025 Historia. All Rights Reserved.</footer>
 </body>
 </html>
