@@ -62,6 +62,7 @@ body{
     grid-template-rows: 100px 2fr 100px;
     height: 100vh;
     margin: 0;
+    overflow-x: hidden;
     padding: 0;
     width: 100vw;
 }
